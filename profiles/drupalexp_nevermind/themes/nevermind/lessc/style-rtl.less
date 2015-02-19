@@ -1,0 +1,323 @@
+/*
+This file is used to fix style for RTL case.
+*/
+/* 
+    Created on : Jun 8, 2014, 9:46:29 PM
+    Author     : DrupalEXP
+*/
+
+body.rtl{
+
+    /*List style in RTL 
+    ============================================*/
+    /*Accordion*/
+    .panel-group{
+        .panel-title:after{
+            float: left;
+        }
+    }
+    /*simister*/
+    .ImageWrapper .StyleSc span:nth-of-type(2){
+        right: auto;
+    }
+    /*menu*/
+    .menu ul li a, .menu ul li span{
+        text-align: right;
+    }
+
+    .dexp-dropdown > ul ul ul {
+        left: -200px;
+        width:200px;
+    }
+    /*twitter*/
+    .boder-icon{
+        .dexp-twitter{
+            .sp-text {
+                padding-right: 50px;
+                padding-left: 0;
+                text-align: right;
+                &:before{
+                    left: auto;
+                    right: 0;
+                }
+            }
+            .author{
+               padding-left: 0;
+               padding-right: 50px;
+               text-align: right;
+            }
+        }
+    }
+    /*Box*/
+    .dexp-shortcodes-box.box-top .box-icon{
+        float: right;
+        margin: 3px 0px 10px 15px;
+    }
+    .dexp-shortcodes-box.box-top h3{
+        text-align: right;
+    }
+    .blog_wrap .post_date{
+        float: right;
+        margin-right: 0;
+        margin-left: 10px;
+    }
+    .region-social-top ul{float: right; margin:0;}
+    .social ul li,.tagcloud a,
+    .authorbox_wrapper .user-picture{
+        float: right;
+    }
+    .title .block-title{
+        text-align: right;
+    }
+    //
+    .panel-group.default .panel-default .panel-heading .panel-title a{
+        padding-right: 45px;
+        &:before{
+            right: 0;
+        }
+    }
+    
+    .panel-group.default .panel-default .panel-heading i {
+        padding: 0 0 0 5px;
+    }
+    //
+    ul.check li{
+        &:before{
+            right: 0;
+        }
+        a{
+            padding-right: 20px;
+        }
+    }
+    //
+    #block-menu-menu-footer-menu ul{
+        text-align: left;
+        li{
+            border:0;
+            border-left: 1px solid #333;
+            &:last-child{
+                border-left: 0 solid #000;
+            }
+        }
+    }
+    .bx-wrapper .bx-controls-direction a.bx-next{float: right;}
+    //
+    #section-header .region-tops .text-right{
+        text-align: left;
+    }
+    #section-footer .block-title span,
+    #section-main-content .region-sidebar .title .block-title span{
+        padding-left: 10px;
+        padding-right: 0;
+    }
+    //
+   
+    //
+    .blog_wrap .blog-detail .blog-meta{
+        span{
+            float: right;
+        }
+        .com~.com-right {
+            float: left;
+        }
+    }
+    //
+    .portfolio-content h3.portfolio-title{
+        text-align: right;
+    }
+    //
+    .view-portfolio{
+        .portfolio-wrap,
+        .portfolio-teaser{
+            .portfolio-category{
+                float: right;
+                i{
+                    float: right;
+                    padding-left: 5px;
+                }
+            }
+        }
+    }
+    //Menu
+    #block-views-simple-shopping-cart-block .cart-form-simple ul,
+    h3.tagline,
+    .region-breadcrumb .text-right{text-align: left;}
+    //
+    
+    .region-pagetitle h1.page_title,
+    .team-custom figure .field-name-field-team-image,
+    .region-pagetitle .page_subtitle{float: right;}
+    .header-4{
+        .social.pull-right{float: right!important;}
+    }
+    //forum
+    .forum .name{text-align: left;}
+    //
+    .title1 > hr:after{
+        right: 0;
+        left: 80%;
+    }
+    .radio input[type="radio"],
+    .radio-inline input[type="radio"], 
+    .checkbox input[type="checkbox"],
+    .checkbox-inline input[type="checkbox"]{
+        float: right;
+        margin-right: 0;
+        margin-left: 5px;
+    }
+    //
+    .team-custom .team-decs,.authorbox_wrapper .author-desc{
+        border:0;
+        border-right:1px solid #F3F3F3;
+    }
+    //
+    #timeline .timeline-item span.blog-date{
+        left: 0;right: auto;
+    }
+    .blog-columns:after{
+        right: -5%;left: auto;
+    }
+    #timeline .timeline-item:nth-child(2n+1) .blog-columns:after {
+        left: -5%;
+        right: auto;
+    }
+    blockquote{border-right: 5px solid @base_color;border-left:0;}
+    blockquote.pull-right {
+    padding-left: 15px;
+    padding-right: 0;
+    border-left: 5px solid @base_color;
+    border-right: 0;
+    }
+    blockquote.pull-right p, blockquote.pull-right small, blockquote.pull-right .small{text-align: left;}
+    //Shop
+    #comments_wrapper .comment-avatar {
+    margin: 0 0 0 10px;
+    float: right;}
+    #comments_wrapper .comment-reply{float: left;}
+    .commerce-add-to-cart label{
+        padding: 0 10px 0 0;
+        &:before{right: 0;left: auto;}
+    }
+    .product-content .commerce-add-to-cart .form-type-select,
+     .product-content .commerce-add-to-cart .form-type-textfield,
+     div.fivestar-widget-static .star,
+     .view-bestsellers ul li img{
+        float: right;
+    }
+    .view-bestsellers .views-field-field-product-rating .rating{text-align: right!important;}
+    .page-cart .view-commerce-cart-form #edit-submit{margin:0 0 0 10px;}
+    .product-teaser .product-rating{right: 0;left: auto;}
+    .product-teaser .product-rating i{padding: 0 0 0 5px;float: right;}
+    .product-teaser {
+        .product_title,.product-price{text-align: right;}
+    }
+    //
+    .popular-post ul li img, .recent-post ul li img{
+        float: right;
+        margin-left: 10px;
+    }
+     //
+     .view-portfolio  .portfolio-media div.dexp_carousel .carousel-control.left,
+     div.dexp_carousel .carousel-control.left{right: 15px;}
+
+
+     //
+     #section-main-content .block-menu ul.menu{
+        border-left: 1px solid #ededed;
+         border-right:0;
+        li{
+            a{
+                border-right:0;
+                border-left: 3px solid transparent;
+            }
+
+            &:hover a,
+            &.active-trail a{
+                border-right-color:transparent;
+                border-left-color: #B54321;
+            }
+        }
+       
+     }
+     .nav-tabs>li{float: right;}
+     //
+     .item-list ul li{
+        background:url(../images/li.png) no-repeat  right center rgba(0,0,0,0);
+        padding: 0 15px 0 0;
+     }
+}
+//===Responsive
+@media (min-width: 768px){
+    body.rtl{
+        .about-widget {
+             border:0;
+            border-right: 1px solid #ECECEC;
+            padding: 0 55px 0 0;
+        }
+
+    }
+}
+
+@media screen and (min-width: 992px){
+
+}
+
+@media screen and (max-width: 991px){
+     #section-footer{
+        .region-footer-third{clear: left;}
+      }
+       #block-menu-menu-footer-menu ul{text-align: center;}
+    body.rtl{
+        .dexp-menu-toggler{
+            left: 0;
+            right: auto;
+        }
+        #section-footer{
+            .region-footer-third{clear: right;}
+        }
+        #block-menu-menu-footer-menu ul{text-align: center;}
+    }
+}
+@media (max-width: @screen-xs-max){
+    body.rtl{
+        .page_title_no_sub,
+        .page_title_has_sub,
+        .breadcrumb{
+            text-align: center;
+        }
+        .region-pagetitle{
+            .page_subtitle{
+                float: none;
+                width: 200px;
+                margin: 0 auto;
+            } 
+            h1.page_title{
+                float: none;
+            }
+        }
+        .team-custom .team-decs{
+            border:0;
+            border-bottom: 1px solid #F3F3F3;
+            padding: 0 15px;
+            p{
+                margin: 0;
+            }
+        }
+    }
+}
+@media (max-width: @screen-xs-max) {
+    body.rtl{
+        .region-social-top ul{
+          float: none;
+        }
+        .header-6 .region-social-top .social{
+            float: none!important;
+        }
+        .dexp-menu-toggler{
+            left: 5px;
+        }
+        h3.tagline{text-align: center;}
+        .view-portfolio  .portfolio-media div.dexp_carousel .carousel-control.left{right: 30px;}
+    }
+
+}

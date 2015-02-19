@@ -1,0 +1,8 @@
+BD
+user:anlauser
+pass:123
+
+
+proyecto
+user: admin	
+pass: 123

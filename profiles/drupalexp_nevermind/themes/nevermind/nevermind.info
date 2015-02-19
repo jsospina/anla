@@ -1,0 +1,95 @@
+name = Nevermind
+description = "Nevermind - Responsive Multi-Purpose Drupal Theme"
+core = 7.x
+base theme = drupalexp
+
+
+regions[contact_info] = Contact Info
+regions[social_top] = Social Top
+regions[slider] = Slider
+regions[logo] = Logo
+regions[navigation] = Navigation
+regions[tops] = Tops
+regions[breadcrumb] = Breadcrumb
+regions[pagetitle] = Page Title
+regions[google_maps] = Maps
+regions[content] = Content
+regions[sidebar] = Sidebar
+regions[tagline] = Tagline
+
+regions[feature] = Feature
+regions[feature_first] = Feature First
+regions[feature_second] = Feature Second
+regions[feature_third] = Feature Third
+regions[feature_four] = Feature Four
+
+regions[portfolio] = Portfolio
+regions[our_works] = Our Works
+regions[about] = About
+regions[about_1] = About 1
+regions[about_2] = About 2
+regions[about_3] = About 3
+regions[services_1] = Services 1
+regions[services_2] = Services 2
+regions[services_3] = Services 3
+regions[services_4] = Services 4
+
+regions[strapline_1] = Strapline 1
+regions[strapline_2] = Strapline 2
+
+regions[parallax_1] = Parallax-1
+regions[parallax_2] = Parallax-2
+regions[parallax_3] = Parallax-3
+regions[parallax_4] = Parallax-4
+
+regions[client_feedback] = Client Feedback
+regions[client] = Our Client
+regions[latest_news] = Latest News
+regions[client] = Our Client
+regions[team] = Team
+
+regions[footer_first] = Footer First
+regions[footer_second] = Footer Second
+regions[footer_third] = Footer Third
+regions[footer_fourth] = Footer Fourth
+
+regions[users] = Users
+regions[user1] = User 1
+regions[user2] = User 2
+regions[user3] = User 3
+regions[user4] = User 4
+regions[user5] = User 5
+regions[user6] = User 6
+regions[user7] = User 7
+regions[user8] = User 8
+regions[user9] = User 9
+regions[user10] = User 10
+
+regions[copyright] = Copyright
+regions[footer_menu] = Footer Menu
+
+lessc[] = lessc/mixin.less
+lessc[] = lessc/general.less
+lessc[] = lessc/style.less
+lessc[] = lessc/block.less
+lessc[] = lessc/blog.less
+lessc[] = lessc/shortcode.less
+lessc[] = lessc/mainmenu.less
+lessc[] = lessc/portfolio.less
+lessc[] = lessc/simister.less
+lessc[] = lessc/slideshow.less
+lessc[] = lessc/pages.less
+lessc[] = lessc/shop.less
+lessc[] = lessc/config.less
+lessc[] = lessc/color.less
+lessc[] = lessc/quicksettings.less
+lessc[] = lessc/style-rtl.less 
+
+scripts[] = assets/js/nevermind.js 
+
+
+settings[drupalexp_default_preset] = '2'
+settings[toggle_main_menu] = '0'
+settings[drupalexp_layout] = 'wide'
+settings[logo_path] = 'logo.png'
+settings[toggle_main_menu] = '0'

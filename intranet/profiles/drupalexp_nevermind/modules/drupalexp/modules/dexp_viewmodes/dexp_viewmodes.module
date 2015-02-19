@@ -1,0 +1,36 @@
+<?php
+
+/**
+* Implements hook_entity_info_alter().
+*/
+function dexp_viewmodes_entity_info_alter(&$entity_info) {
+  $entity_info['node']['view modes']['time_line'] = array(
+    'label' => t('Blog Timeline'),
+    'custom settings' => TRUE,
+  );
+  $entity_info['node']['view modes']['popularity'] = array(
+    'label' => t('Product Popularity'),
+    'custom settings' => TRUE,
+  );
+  $entity_info['node']['view modes']['custom'] = array(
+    'label' => t('Custom'),
+    'custom settings' => TRUE,
+  );
+}
+
+/**
+* Implements hook_preprocess_node().
+*/
+function dexp_viewmodes_preprocess_node(&$vars) {
+  if($vars['view_mode'] == 'time_line') {
+    $vars['theme_hook_suggestions'][] = 'node__' . $vars['type'] . '__time_line';
+  }
+  if($vars['view_mode'] == 'popularity') {
+    $vars['theme_hook_suggestions'][] = 'node__' . $vars['type'] . '__popularity';
+  }
+  if($vars['view_mode'] == 'custom') {
+    $vars['theme_hook_suggestions'][] = 'node__' . $vars['type'] . '__custom';
+  }
+} 
+
+
